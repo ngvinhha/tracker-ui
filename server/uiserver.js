@@ -1,13 +1,11 @@
 import dotenv from 'dotenv';
 import express from 'express';
 import {createProxyMiddleware} from 'http-proxy-middleware';
-import SourceMapSupport from 'source-map-support';
 
 import render from './render.jsx';
 
 const app = express();
 
-SourceMapSupport.install();
 dotenv.config();
 
 const enableHMR = (process.env.ENABLE_HMR || 'true') === 'true';
