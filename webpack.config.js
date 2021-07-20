@@ -46,7 +46,6 @@ const browserConfig = {
       __isBrowser__: 'true',
     })
   ],
-  devtool: 'source-map',
 };
 
 const serverConfig = {
@@ -82,7 +81,6 @@ const serverConfig = {
       __isBrowser__: 'false',
     })
   ],
-  devtool: 'source-map',
 };
 
 module.exports = [browserConfig, serverConfig];
