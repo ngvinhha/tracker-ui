@@ -13,7 +13,7 @@
     "#lint": "Runs ESLint on all relevant files",
     "lint": "eslint server src browser --ext js,jsx",
     "#compile": "Generates JS bundles for production. Use with start.",
-    "compile": "webpack --config webpack.config.js",
+    "compile": "webpack --mode production",
     "#watch": "Compile, and recompile on any changes.",
     "watch-server-hmr": "webpack -w --config webpack.serverHMR.js",
     "#dev-all": "Dev mode: watch for server changes and start UI server",
