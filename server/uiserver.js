@@ -8,7 +8,7 @@ const app = express();
 
 dotenv.config();
 
-const enableHMR = (process.env.ENABLE_HMR || 'true') === 'true';
+const enableHMR = (process.env.ENABLE_HMR && 'true') === 'true';
 
 if (enableHMR && (process.env.NODE_ENV !== 'production')) {
   console.log('Adding dev middlware, enabling HMR');
